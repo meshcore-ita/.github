@@ -1,0 +1,16 @@
+name: Proposta
+description: Suggerisci un miglioramento o una nuova risorsa.
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: proposta
+    attributes:
+      label: Proposta
+      description: Cosa vorresti aggiungere o cambiare, e perché.
+    validations:
+      required: true
+  - type: input
+    id: fonte
+    attributes:
+      label: Link o fonte
+      description: Riferimento upstream, se presente.

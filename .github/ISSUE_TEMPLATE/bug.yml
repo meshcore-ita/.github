@@ -1,0 +1,23 @@
+name: Segnala un problema
+description: Qualcosa non funziona come dovrebbe.
+labels: ["bug"]
+body:
+  - type: textarea
+    id: cosa
+    attributes:
+      label: Cosa succede
+      description: Comportamento osservato e comportamento atteso.
+    validations:
+      required: true
+  - type: textarea
+    id: riprodurre
+    attributes:
+      label: Come riprodurlo
+      placeholder: |
+        1. ...
+        2. ...
+  - type: input
+    id: ambiente
+    attributes:
+      label: Ambiente
+      placeholder: Browser, sistema operativo, versione
